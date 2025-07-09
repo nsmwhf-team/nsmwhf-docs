@@ -8,26 +8,20 @@ import { defineConfig } from 'vitepress'
 
 import * as i18n from './i18n'
 
-process.env.VITE_EXTRA_EXTENSIONS = 'ini,gm9'
+process.env.VITE_EXTRA_EXTENSIONS = 'nsmwhf'
 
 export default defineConfig({
   title: "3DS Hacks Guide",
-  description: "A complete guide to 3DS custom firmware",
+  description: "Documentation for NSMWHF - A next-generation tool for modifying Super Mario World (1990)",
   head: [
     ['link', { rel: 'icon', href: '/images/site-config/favicon.ico' }],
-    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T' }],
     ['script', {}, `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-760Y60FQ3T');`]
   ],
   locales: {
-    root: i18n.en_US,
-    el_GR: i18n.el_GR,
-    hu_HU: i18n.hu_HU,
-    it_IT: i18n.it_IT,
-    ko_KR: i18n.ko_KR,
-    pt_BR: i18n.pt_BR
+    root: i18n.en_US
   },
   sitemap: {
-    hostname: 'https://3ds.hacks.guide'
+    hostname: 'https://nsmwhf-team.github.io/nsmwhf-docs/'
   },
   themeConfig: {
     outline: {
@@ -38,8 +32,8 @@ export default defineConfig({
       next: false
     },
     socialLinks: [
-      { icon: 'discord', link: 'https://discord.gg/MWxPgEp' },
-      { icon: 'github', link: 'https://github.com/hacks-guide/Guide_3DS' }
+      { icon: 'discord', link: 'https://example.com/' },
+      { icon: 'github', link: 'https://github.com/nsmwhf-team/nsmwhf-docs/' }
     ]
   },
   vite: {
@@ -68,37 +62,6 @@ export default defineConfig({
   },
   srcExclude: [
     '**/_include/**',
-    '**/_internal/**',
-    'af_ZA/**',
-    'ar_SA/**',
-    'bg_BG/**',
-    'ca_ES/**',
-    'cs_CZ/**',
-    'da_DK/**',
-    'de_DE/**',
-    'en_PT/**',
-    'es_ES/**',
-    'et_EE/**',
-    'fi_FI/**',
-    'fr_FR/**',
-    'he_IL/**',
-    'hr_HR/**',
-    'id_ID/**',
-    'ja_JP/**',
-    'ms_MY/**',
-    'nl_NL/**',
-    'no_NO/**',
-    'pl_PL/**',
-    'pt_PT/**',
-    'ro_RO/**',
-    'ru_RU/**',
-    'sr_SP/**',
-    'sv_SE/**',
-    'th_TH/**',
-    'tr_TR/**',
-    'uk_UA/**',
-    'vi_VN/**',
-    'zh_CN/**',
-    'zh_TW/**'
+    '**/_internal/**'
   ]
 })
