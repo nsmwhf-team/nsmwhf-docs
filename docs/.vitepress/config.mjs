@@ -32,7 +32,7 @@ export default defineConfig({
       next: false
     },
     socialLinks: [
-      { icon: 'discord', link: 'it's not public yet' },
+      { icon: 'discord', link: 'https://example.com/' },
       { icon: 'github', link: 'https://github.com/nsmwhf-team/nsmwhf-docs/' }
     ]
   },
